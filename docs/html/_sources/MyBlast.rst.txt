@@ -1,0 +1,8 @@
+MyBlast module
+==============
+
+.. automodule:: MyBlast
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :member-order: bysource

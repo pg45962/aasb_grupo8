@@ -1,0 +1,8 @@
+AlignSeq module
+===============
+
+.. automodule:: AlignSeq
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :member-order: bysource

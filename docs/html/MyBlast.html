@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyBlast module &mdash; Documentação Trabalho Grupo 8 </title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" />
+    <link rel="next" title="MyMotifs module" href="MyMotifs.html" />
+    <link rel="prev" title="MyAlign module" href="MyAlign.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Trabalho Grupo 8
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Módulos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">trabalho_grupo_8</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="AlignSeq.html">AlignSeq module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultipleAlign.html">MultipleAlign module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MyAlign.html">MyAlign module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MyBlast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MyMotifs.html">MyMotifs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MySeq.html">MySeq module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Trabalho Grupo 8</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">trabalho_grupo_8</a> &raquo;</li>
+      <li>MyBlast module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MyBlast.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-MyBlast">
+<span id="myblast-module"></span><h1>MyBlast module<a class="headerlink" href="#module-MyBlast" title="Link permanente para este título"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="MyBlast.readDatabase">
+<span class="sig-prename descclassname"><span class="pre">MyBlast.</span></span><span class="sig-name descname"><span class="pre">readDatabase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MyBlast.readDatabase" title="Link permanente para esta definição"></a></dt>
+<dd><p>Lê um conjunto de sequencias num ficheiro texto, uma por linha.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MyBlast.buildMap">
+<span class="sig-prename descclassname"><span class="pre">MyBlast.</span></span><span class="sig-name descname"><span class="pre">buildMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MyBlast.buildMap" title="Link permanente para esta definição"></a></dt>
+<dd><p>Dada a sequência (<strong>query</strong>) e o tamanho das palavras (<strong>W</strong>) mapea cada ocorrência de sub-sequências de tamanho W. O resultado é um dicionário com:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Chaves: sub-sequencias de tamanho W (que ocorrem na query);</p></li>
+<li><p>Valores: lista de indices (posições onde a sub-sequência ocorre na query).</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MyBlast.getHits">
+<span class="sig-prename descclassname"><span class="pre">MyBlast.</span></span><span class="sig-name descname"><span class="pre">getHits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MyBlast.getHits" title="Link permanente para esta definição"></a></dt>
+<dd><p>Tem como entradas o Mapa da sequência query (criada pela função anterior), Sequência na qual procurar (e.g. da BD) e Valor do tamanho das palavras (W). O seu objetivo é descobrir todas as co-ocorrências de palavras de tamanho W entre a query e a sequência (só serão considerados matches perfeitos de tamanho W). O resultado é uma lista de hits; cada hit é um tuplo, com o 1º elemento sendo a posição da palavra na query e o 2º sendo a posição da palavra na sequência.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MyBlast.extendHit">
+<span class="sig-prename descclassname"><span class="pre">MyBlast.</span></span><span class="sig-name descname"><span class="pre">extendHit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MyBlast.extendHit" title="Link permanente para esta definição"></a></dt>
+<dd><p>Cada hit será estendido em ambas as direções. Um hit será estendido enquanto o nº de matches nessa direção for pelo menos metade do tamanho da extensão. A função terá como entradas: a sequência (da bd), a query, o hit e o valor de W. O resultado será um tuplo com 4 valores: início do hit estendido na query, início do hit estendido na sequência, tamanho do hit estendido, score do hit estendido (= nº de matches).</p>
+<p>Parâmetros:</p>
+<ul class="simple">
+<li><p>stq: início do hit na query;</p></li>
+<li><p>sts: início do hit na sequência;</p></li>
+<li><p>matfw: matches à frente;</p></li>
+<li><p>k: posições andadas em frente;</p></li>
+<li><p>size: tamanho do hit estendido.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MyBlast.hitBestScore">
+<span class="sig-prename descclassname"><span class="pre">MyBlast.</span></span><span class="sig-name descname"><span class="pre">hitBestScore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MyBlast.hitBestScore" title="Link permanente para esta definição"></a></dt>
+<dd><p>Devolve o hit com maior score de uma sequencia com a query. Em caso de empate devolve a de menor tamanho.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="MyAlign.html" class="btn btn-neutral float-left" title="MyAlign module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="MyMotifs.html" class="btn btn-neutral float-right" title="MyMotifs module" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Grupo 8 AASB.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

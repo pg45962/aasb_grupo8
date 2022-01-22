@@ -1,0 +1,8 @@
+MySeq module
+============
+
+.. automodule:: MySeq
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :member-order: bysource

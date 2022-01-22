@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlignSeq module &mdash; Documentação Trabalho Grupo 8 </title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" />
+    <link rel="next" title="MultipleAlign module" href="MultipleAlign.html" />
+    <link rel="prev" title="trabalho_grupo_8" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Trabalho Grupo 8
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Módulos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">trabalho_grupo_8</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AlignSeq module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultipleAlign.html">MultipleAlign module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MyAlign.html">MyAlign module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MyBlast.html">MyBlast module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MyMotifs.html">MyMotifs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MySeq.html">MySeq module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Trabalho Grupo 8</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">trabalho_grupo_8</a> &raquo;</li>
+      <li>AlignSeq module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/AlignSeq.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-AlignSeq">
+<span id="alignseq-module"></span><h1>AlignSeq module<a class="headerlink" href="#module-AlignSeq" title="Link permanente para este título"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">AlignSeq.</span></span><span class="sig-name descname"><span class="pre">AlignSeq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq" title="Link permanente para esta definição"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Esta classe permite fazer o alinhamento entre duas sequências.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.printMat">
+<span class="sig-name descname"><span class="pre">printMat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.printMat" title="Link permanente para esta definição"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.scorePos">
+<span class="sig-name descname"><span class="pre">scorePos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.scorePos" title="Link permanente para esta definição"></a></dt>
+<dd><p>Marca o score de uma posição.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.scoreAlin">
+<span class="sig-name descname"><span class="pre">scoreAlin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.scoreAlin" title="Link permanente para esta definição"></a></dt>
+<dd><p>Marca o score de um alinhamento.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.needlemanWunsch">
+<span class="sig-name descname"><span class="pre">needlemanWunsch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.needlemanWunsch" title="Link permanente para esta definição"></a></dt>
+<dd><p>Permite realizar o alinhamento global de duas sequencias.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.recoverAlignment">
+<span class="sig-name descname"><span class="pre">recoverAlignment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.recoverAlignment" title="Link permanente para esta definição"></a></dt>
+<dd><p>Pega na matriz construída na última função, em conjunto com as duas sequencias e implementa o processo de recuperação de alinhamento ótimo global.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.recoverAlignment_with_ties">
+<span class="sig-name descname"><span class="pre">recoverAlignment_with_ties</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.recoverAlignment_with_ties" title="Link permanente para esta definição"></a></dt>
+<dd><p>Semelhante ao anterior mas tem em conta os empates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.smithWaterman">
+<span class="sig-name descname"><span class="pre">smithWaterman</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.smithWaterman" title="Link permanente para esta definição"></a></dt>
+<dd><p>Algoritmo bem conhecido para a realização de alinhamento de sequencias local. Em vez de olhar a sequência total, o algoritmo de Smith-Waterman compara segmentos de todos os comprimentos possíveis e otimiza a medida de similaridade.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.recoverLocalAlignment">
+<span class="sig-name descname"><span class="pre">recoverLocalAlignment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.recoverLocalAlignment" title="Link permanente para esta definição"></a></dt>
+<dd><p>Pega na matriz construída na última função e implementa o processo de recuperação de alinhamento ótimo local.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.recoverAlignLocal_with_ties">
+<span class="sig-name descname"><span class="pre">recoverAlignLocal_with_ties</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.recoverAlignLocal_with_ties" title="Link permanente para esta definição"></a></dt>
+<dd><p>Semelhante ao anterior mas tem em conta empates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.max3t">
+<span class="sig-name descname"><span class="pre">max3t</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.max3t" title="Link permanente para esta definição"></a></dt>
+<dd><p>Devolve o maior valor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AlignSeq.AlignSeq.max3t_with_ties">
+<span class="sig-name descname"><span class="pre">max3t_with_ties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AlignSeq.AlignSeq.max3t_with_ties" title="Link permanente para esta definição"></a></dt>
+<dd><p>Devolve o maior valor mas tem em atenção empates.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="modules.html" class="btn btn-neutral float-left" title="trabalho_grupo_8" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="MultipleAlign.html" class="btn btn-neutral float-right" title="MultipleAlign module" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Grupo 8 AASB.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

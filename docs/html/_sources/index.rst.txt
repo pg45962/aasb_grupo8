@@ -1,0 +1,31 @@
+.. Trabalho Grupo 8 documentation master file, created by
+   sphinx-quickstart on Sat Jan 22 19:43:18 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Trabalho Grupo 8 
+=================
+
+Documentação do *package* para a manipulação de sequências, feito no âmbito da unidade curricular de Algoritmos para Análise de Sequências Biológicas, Mestrado em Bioinformática - Universidade do Minho.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Módulos:
+
+   modules
+
+Navegação
+=========
+
+Recursos de navegação pela documentação
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+Repositório Github
+===================
+
+O repositório Github está disponível aqui, onde se encontram todos os ficheiros do *package*, assim como os testes e *source-code* desta página.
+
